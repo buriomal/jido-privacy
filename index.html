@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jido プライバシーポリシー</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --accent:#4493f8; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+         line-height:1.8; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:36px 0 8px; padding-bottom:4px; border-bottom:1px solid var(--line); }
+  .meta { color:var(--muted); font-size:.9rem; margin-bottom:24px; }
+  table { width:100%; border-collapse:collapse; font-size:.93rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { white-space:nowrap; }
+  a { color:var(--accent); }
+  ul { padding-left:1.4em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Jido プライバシーポリシー</h1>
+<div class="meta">制定日・最終更新日: 2026年9月27日</div>
+
+<p>いちじく(以下「開発者」)は、Androidアプリ「Jido: 日本語で使える簡単自動化ツール」(以下「本アプリ」)における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+<h2>1. 基本方針</h2>
+<ul>
+  <li>本アプリは、利用者が作成した自動化ルールを<strong>端末内だけで</strong>実行します。</li>
+  <li>開発者はサーバーを運営しておらず、利用者の情報を開発者へ送信・収集することはありません。</li>
+  <li>アカウント登録は不要です。広告は表示しません。アクセス解析ツールも使用していません。</li>
+</ul>
+
+<h2>2. 端末内で扱う情報と利用目的</h2>
+<p>本アプリは、利用者が作成した自動化ルールを動かすために、以下の情報に端末内でアクセスすることがあります。いずれも利用者が該当する機能を使い、権限を許可した場合に限られます。これらの情報が端末の外へ送信されることはありません。</p>
+<table>
+  <tr><th>情報</th><th>利用目的</th></tr>
+  <tr><td>位置情報(バックグラウンドを含む)</td><td>「場所」トリガーで、登録した場所への到着・退出を検知するため。本アプリを閉じている間も検知できるよう、バックグラウンドでの位置情報を使用します。また、接続中のWi-Fiの名前を判定する場合にも使用することがあります。</td></tr>
+  <tr><td>カレンダーの予定(読み取りのみ)</td><td>「予定」トリガーで、予定の開始・終了に合わせてルールを実行するため。予定の追加・変更は行いません。</td></tr>
+  <tr><td>アプリの使用状況</td><td>「アプリを開いた/閉じた」トリガーで、画面に表示されているアプリを判定するため。</td></tr>
+  <tr><td>インストール済みアプリの一覧</td><td>「アプリ起動」アクションで、起動するアプリを選べるようにするため。</td></tr>
+  <tr><td>Bluetooth機器の接続状態・機器名</td><td>イヤホンや車などとの接続・切断をトリガーにするため。</td></tr>
+  <tr><td>Wi-Fiの接続状態、充電状態、電池残量、画面のロック解除、センサー</td><td>各トリガーの条件を判定するため。</td></tr>
+  <tr><td>自動化ルール、やることリストなど利用者が入力した内容</td><td>本アプリの機能を提供するため。端末内のデータベースに保存されます。</td></tr>
+</table>
+
+<h2>3. 設定の変更について</h2>
+<p>利用者の自動化ルールを実行するため、本アプリは音量、画面の明るさ・回転、おやすみモードなどの端末設定を変更することがあります。これらは利用者が作成したルールに従う場合のみ行われ、変更に必要な権限は利用者自身が端末の設定画面で許可します。</p>
+
+<h2>4. 第三者サービス</h2>
+<p>本アプリは、以下のGoogleのサービスを利用します。これらのサービスによる情報の取り扱いは、Googleのプライバシーポリシーに従います。</p>
+<ul>
+  <li><strong>Google Play 請求サービス</strong>: アプリ内購入の処理のため。支払い情報はGoogleが処理し、開発者が受け取ることはありません。</li>
+  <li><strong>Google Play 開発者サービス(位置情報API)</strong>: 「場所」トリガーの検知のため。</li>
+</ul>
+<p>Googleのプライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h2>5. 情報の共有・販売</h2>
+<p>開発者は、利用者の情報を第三者に提供・販売することはありません。</p>
+
+<h2>6. データの保存と削除</h2>
+<p>本アプリのデータはすべて利用者の端末内に保存され、端末のバックアップ機能による外部への保存も行いません。本アプリをアンインストールするか、端末の設定から本アプリのデータを消去すると、すべてのデータが削除されます。許可した権限は、端末の設定からいつでも取り消すことができます。</p>
+
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは13歳未満の子どもを対象としておらず、子どもの個人情報を意図的に収集することはありません。</p>
+
+<h2>8. ポリシーの変更</h2>
+<p>本ポリシーは必要に応じて変更することがあります。重要な変更がある場合は、このページで告知します。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+<p>開発者: いちじく<br>
+メール: <a href="mailto:yukiuiutd0721@gmail.com">yukiuiutd0721@gmail.com</a></p>
+</main>
+</body>
+</html>
